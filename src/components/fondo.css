@@ -1,0 +1,21 @@
+.fondo{
+    height: 100vh;
+    background: linear-gradient(to right,#17C1E8,#1175EF);
+    position: relative;
+}
+
+.inferior{
+    width: full;
+    margin-top: 420px;
+    background: linear-gradient(to right,#17C1E8,#1175EF);
+    position: absolute;
+    bottom: 5;
+    
+    
+}
+
+.navLink{
+    color: "#ffffff";
+    font-weight: bolder;
+    color: white;
+}
