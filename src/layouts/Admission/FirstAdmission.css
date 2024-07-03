@@ -1,0 +1,25 @@
+.title{
+    font-weight: bolder;
+    color: white;
+    margin-left: 20vh;
+    font-size: 35px;
+}
+
+.title2{
+    font-weight: bolder;
+    color: white;
+    margin-left: 20vh;
+    font-size: 30px;
+}
+
+.image-card-container {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap; /* Permite el ajuste en pantallas más pequeñas */
+    justify-content: space-between; /* Distribuye las tarjetas en filas */
+  }
+  
+  .image-card-container > * {
+    flex: 1 1 calc(25% - 32px); /* Cuatro tarjetas por fila con espacio entre ellas */
+    box-sizing: border-box;
+  }

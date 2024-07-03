@@ -8,7 +8,6 @@ export default function Fondo() {
     <div className="fondo p-3 mx-auto border-b border-white/30">
       <Nav />
       <hr />
-
     </div>
     
     </>

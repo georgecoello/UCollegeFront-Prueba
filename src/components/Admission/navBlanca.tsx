@@ -1,19 +1,20 @@
-import { Navbar, NavbarCollapse, NavbarLink, NavbarToggle } from "flowbite-react";
-import { AiOutlineUser } from "react-icons/ai";
+import { Navbar, NavbarCollapse, NavbarToggle } from "flowbite-react";
+import "./navBlanca.css"
+import { Link } from 'react-router-dom';
 
 
 export function Nav() {
   return (
-    <Navbar fluid rounded style={{ background: "linear-gradient(to right, #17C1E8, #1175EF)", paddingRight: "80px"}}>
-        <img src="/Logo-White.png" alt="Logo" style={{width:"20%", marginLeft:"35px"}}/>
+    <Navbar fluid rounded style={{ background: "linear-gradient(to right, #17C1E8, #1175EF)", paddingRight: "50px"}}>
+        <img src="/Logo-White.png" alt="Logo" className="LogoWhite" style={{width:"10%", marginLeft:"35px"}}/>
         <NavbarToggle style={{color:"#ffffff"}}/>
       <NavbarCollapse>
-        <NavbarLink href="#" className="navLink">Inicio</NavbarLink>
-        <NavbarLink href="#" className="navLink">Inscripción</NavbarLink>
-        <NavbarLink href="#" className="navLink">Resultados</NavbarLink>
+        <Link to="/admission" className="navLink">Inicio</Link>
+        <Link to="/inscription" className="navLink">Inscripción</Link>
+        <Link to="/admission" className="navLink">Resultados</Link>
         <div className="flex md:order-2">
-          <AiOutlineUser style={{ color: "white", marginRight: "5px", fontWeight:"bolder" }} />
-          <NavbarLink href="#" className="navLink">Iniciar Sesión</NavbarLink>
+          <img src="icon.png" alt="logo" style={{ width:"10%", marginRight: "7px" }}/>
+          <Link to="/admission" className="navLink">Resultados</Link>
         </div>
       </NavbarCollapse>
 
